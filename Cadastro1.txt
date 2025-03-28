@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Cadastro1"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-21 10:10:12 "/>
+        <attribute name="created" value="QWx1bm87VVBMMi0wNkE7MjAyNS0wMi0yMTsiMDc6NDc6NTggIjsyMjE0"/>
+        <attribute name="edited" value="QWx1bm87VVBMMi0wNkE7MjAyNS0wMi0yMTsiMTA6MTA6MTIgIjsxOzIyOTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Seja bem vindo ao sistema de cadastro de usu&#225;rio&quot;" newline="True"/>
+            <output expression="&quot;Por favor informe seu nome&quot;" newline="True"/>
+            <declare name="armazenamento1" type="String" array="False" size=""/>
+            <input variable="armazenamento1"/>
+            <output expression="&quot;O nome digitado foi &quot; &amp; armazenamento1" newline="True"/>
+            <output expression="&quot;Agora me informe seu sobrenome&quot;" newline="True"/>
+            <declare name="armazenamento2" type="String" array="False" size=""/>
+            <input variable="armazenamento2"/>
+            <output expression="&quot;O sobrenome digitado foi &quot; &amp; armazenamento2" newline="True"/>
+            <output expression="&quot;Me informe sua idade&quot;" newline="True"/>
+            <declare name="armazenamento3" type="Integer" array="False" size=""/>
+            <input variable="armazenamento3"/>
+            <output expression="&quot;A idade informada foi &quot; &amp; armazenamento3" newline="True"/>
+            <output expression="&quot;Informe seu cpf&quot;" newline="True"/>
+            <declare name="armazenamento4" type="Integer" array="False" size=""/>
+            <input variable="armazenamento4"/>
+            <output expression="&quot;O cpf informado foi &quot; &amp; armazenamento4" newline="True"/>
+            <output expression="&quot;Por ultimo me informe seu endere&#231;o&quot;" newline="True"/>
+            <declare name="armazenamento5" type="String" array="False" size=""/>
+            <input variable="armazenamento5"/>
+            <output expression="&quot;O endere&#231;o informado foi &quot; &amp; armazenamento5" newline="True"/>
+            <output expression="&quot;Voce tem telefone? &quot;" newline="True"/>
+            <declare name="telefone" type="String" array="False" size=""/>
+            <input variable="telefone"/>
+            <if expression="telefone==&quot;sim&quot;">
+                <then>
+                    <output expression="&quot;Digite o numero do seu telefone&quot;" newline="True"/>
+                    <declare name="numerotel" type="String" array="False" size=""/>
+                    <input variable="numerotel"/>
+                    <output expression="numerotel" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Os dados informados foram &quot; &amp; armazenamento1 &amp; &quot; &quot; &amp;  armazenamento2 &amp; &quot; &quot; &amp;  armazenamento3 &amp; &quot; &quot; &amp;  armazenamento4 &amp; &quot; &quot; &amp;  armazenamento5 &amp; &quot; &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
